@@ -1,15 +1,45 @@
-
 <!DOCTYPE html>
 <header>
-  <style>
-  body { background-color: blue }
-  p { font-family: monospace; color: white }
-  h2 { font-family: arial; color: lightblue }
-  </style>
+    <style>
+        body {
+            background-color: black
+        }
+
+        p {
+            font-family: monospace;
+            color: white
+        }
+
+        h2 {
+            font-family: monospace;
+            color: lightblue
+        }
+    </style>
+    <script>
+        function sleep(milliseconds) {
+            const date = Date.now();
+            let currentDate = null;
+            do {
+                currentDate = Date.now();
+            } while (currentDate - date < milliseconds);
+        }
+
+        function cool() {
+            while true {
+                sleep(1000)
+                document.getElementById("head1").innerHTML = "stencylxd."
+                sleep(1000)
+                document.getElementById("head1").innerHTML = "stencylxd.."
+                sleep(1000)
+                document.getElementById("head1").innerHTML = "stencylxd..."
+            }
+        }
+    </script>
 </header>
-<body>
-<h2>stencylxd</h2>
-<p>Hello! Welcome to my website.<br>
-I am a developer that works with Ruby, QBasic, HTML, and CSS.<br>
-Below I have source or binary downloads for stuff I make.</p>
+
+<body onload="cool()">
+    <h2 id="head1">stencylxd</h2>
+    <p>Hello! Welcome to my website.<br>
+        I am a developer that works with <b>Ruby</b>, <b>QBasic</b>, <b>HTML</b>, and <b>CSS</b>.<br>
+        Below I have <b>source</b> or <b>binary</b> downloads for stuff I make.</p>
 </body>
