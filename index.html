@@ -4,17 +4,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/favicon.ico">
     <script>
-    function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+    function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
 }
         function cool() {
             while (true) {
-            document.getElementById("head1").innerHTML = "stencylxd."
-            sleep(1000)
-                        document.getElementById("head1").innerHTML = "stencylxd.."
-            sleep(1000)
-                        document.getElementById("head1").innerHTML = "stencylxd..."
-            sleep(1000)
+            document.getElementById("head1").innerHTML = "stencylxd.";
+            sleep(1000);
+                        document.getElementById("head1").innerHTML = "stencylxd..";
+            sleep(1000);
+                        document.getElementById("head1").innerHTML = "stencylxd...";
+            sleep(1000);
             }
         }
     </script>
