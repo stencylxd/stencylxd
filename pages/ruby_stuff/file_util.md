@@ -4,7 +4,7 @@ file_util is a CLI (Command Line Interface) program.<br>
 
 Features:
 
-- Create files and folders. (mf (makefile), md (makedir)) 
+- Create files and folders. (mf (makefile), md (makedir))
 - Remove files and folders. (rm (files/dirs))
 - Tell the contents of the working directory. (ld)
 - Tell the path of the current working directory. (cd)
@@ -13,9 +13,12 @@ Features:
 
 Downloads:
 
-- Source: (Ruby File)
-- Windows: (Executable) (Not Tested)
-- Linux32: (Executable)
-- Linux64: (Executable)
+- Source: ([Ruby File](https://github.com/stencylxd/crap-in-ruby/raw/master/file_util.rb))
+- Linux: ([Shell Executable](https://github.com/stencylxd/crap-in-ruby/raw/master/executable/file_util))
 
-**cc-by-nc-sa @stencylxd**
+To run on linux: (Shell Executable)<br>
+
+Run the command "chmod 777 file_util"<br>
+Run the command "./file_util"<br>
+
+@stencylxd | 2020
