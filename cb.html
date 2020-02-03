@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<header>
+    <title>stxd-dev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <style>
+        body { background-color: black }
+        p { font-family: monospace; color: white; }
+        h2 { font-family: monospace; color: lightgreen; }
+        a { color: lightblue; font-family: monospace: }
+    </style></header><body>
+    <p>Paste this into your search bar: <br>
+    javascript:while(true){console.log("-");}</p>
+    <button onclick="crash()">Lag</button>
+    <script type="text/javascript">
+function crash(){
+  if(navigator.userAgent.indexOf("Chrome") != -1 )
+    {
+      alert('WHoops')
+window.open('http://crashchrome.com/', '_self', '');
+    }
+    else {
+      alert('Hehe')
+      while (1==1){
+        console.log(3234567654*45671234567890987654321)
+      }
+    }
+}
+</script>
+    </body>
