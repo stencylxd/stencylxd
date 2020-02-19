@@ -1,7 +1,10 @@
 <!DOCTYPE html><html lang="en"><head>
     <title>stxd-dev</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script></script><style>
-        body { background-color: gray; }
+        span { font-family: arial; color: blue; }
+        body { background-color: gray; } br { -webkit-touch-callout: none;
+        -webkit-user-select: none; -khtml-user-select: none;
+       -moz-user-select: none; -ms-user-select: none; user-select: none;}
         h1 { font-family: arial; color: white; text-align: center; }
         textarea { color: green; background-color: black; resize: none;
         width: 600px; height: 300px; } .input { text-align: center; }
@@ -9,20 +12,25 @@
         border-width: 3px; border-radius: 5px; padding: 8px 15px; border: none;
         box-shadow: 0px 9px dodgerblue;} .input .btn:hover { box-shadow: 0 9px green; }
         .input .btn:active { box-shadow: 0 5px darkcyan; transform: translateY(4px); }
-    </style></head><body><br><h1>stencylxd</h1><div class="input">
-    <button type="button" class="btn" onclick="window.open('https://github.com/stencylxd');"
-    >Github</button><button type="button" class="btn"
+        .nh { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none;
+       -moz-user-select: none; -ms-user-select: none; user-select: none; }
+    </style></head><body><br><h1 class="nh">stencylxd</h1><div class="input">
+    <button type="button" class="btn nh" onclick="window.open('https://github.com/stencylxd');"
+    >Github</button><button type="button" class="btn nh"
     onclick="window.open('https://www.youtube.com/channel/UCCF3__lPbyif4GTFLNvrkPQ?view_as=subscriber');"
-    >Youtube</button><button type="button" class="btn" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');"
-    >Secret Page</button><br><br><textarea>
+    >Youtube</button><button type="button" class="btn nh" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');"
+    >Twitter</button><br><br><textarea class="nh" >
 
-      Hello. My name is stencylxd, or stxd-dev.
+
+      Hello! My name is stencylxd, or stxd-dev.
       I make computer programs and kinda cool websites.
       I am learning Ruby, C++, Electronics (Arduino), and other cool stuff.
-      I have my Buttons for Social Media and Programs/Websites.
+      I have my buttons for Social Media and Programs/Websites.
       Check them out for cool stuff, idk.
       -stencylxd year 2020
 
       everything is licensed under CC-BY-NC-SA.
-    </textarea><br><br><button type="button" class="btn">Useless</button></div>
-</body></html>
+    </textarea><br><br><button type="button"
+    onclick="document.getElementById('useless_msg').innerHTML = 'this button does nothing'"
+    class="btn nh">Useless</button><br><br><span class="nh" id="useless_msg"></span>
+    </div></body></html>
