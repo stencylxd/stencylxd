@@ -9,6 +9,15 @@
 	  <meta name="description" content="stencylxd's personal website" />
 	  <title>stencylxd.ga</title>
 	  <link type="text/css" rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+	  <script>
+	  	const randiv = document.getElementById("randiv");
+		for (var y = 0; y != 100; y++) {
+  			for (var x = 0; x != 170; x++) {
+    				randiv.innerHTML += Math.round(Math.random()).toString();
+  			}
+  			randiv.innerHTML += "\n";
+		}		  
+	  </script>
 	  <style>
 		  @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
 		  body {
